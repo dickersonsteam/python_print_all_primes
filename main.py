@@ -41,9 +41,8 @@ while True:
     # Print the number only if it is prime.
     if is_prime(number):
         print(number)
+        # Slow things down for testing.
+        time.sleep(.5)
 
     # Increment by two to skip even numbers
     number += 2
-
-    # Slow things down for testing.
-    time.sleep(.5)
