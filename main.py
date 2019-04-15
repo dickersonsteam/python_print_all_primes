@@ -1,4 +1,5 @@
-import time
+import math
+import time  # only needed for sleep
 
 
 def is_even(x):
@@ -21,7 +22,7 @@ def is_prime(x):
     elif x < 2 or is_even(x): # all other primes are odd
         return False
     else:  # start with 3 and increment by 2 to skip even numbers.
-        for test in range(3, x, 2):
+        for test in range(3, int(math.sqrt(x)), 2):
             if is_divisible(x, test):
                 return False
     return True
