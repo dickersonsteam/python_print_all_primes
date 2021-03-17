@@ -42,7 +42,7 @@ while True:
     if is_prime(number):
         print(number)
         # Slow things down for testing.
-        time.sleep(.5)
+        # time.sleep(.5)
 
     # Increment by two to skip even numbers
     number += 2
